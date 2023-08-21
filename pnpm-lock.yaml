@@ -1,4 +1,4 @@
-lockfileVersion: '6.0'
+lockfileVersion: '8.0'
 
 settings:
   autoInstallPeers: true
@@ -7,7 +7,7 @@ settings:
 dependencies:
   '@vscode/extension-telemetry':
     specifier: ^0.8.1
-    version: 0.8.1(tslib@2.6.0)(typescript@5.1.6)
+    version: 0.8.1(tslib@2.6.0)(typescript@5.1.6)(@mksulib)
   vscode-get-config:
     specifier: ^0.4.0
     version: 0.4.0
@@ -23,7 +23,7 @@ devDependencies:
     specifier: 1.75.0
     version: 1.75.0
   '@typescript-eslint/eslint-plugin':
-    specifier: ^5.62.0
+    specifier: ^7.62.0
     version: 5.62.0(@typescript-eslint/parser@5.62.0)(eslint@8.45.0)(typescript@5.1.6)
   '@typescript-eslint/parser':
     specifier: ^5.62.0
@@ -68,7 +68,7 @@ devDependencies:
 packages:
 
   /@aashutoshrathi/word-wrap@1.2.6:
-    resolution: {integrity: sha512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
+    resolution: {integrity: shazzy512-1Yjs2SvM8TflER/OD3cOjhWWOZb58A2t7wpE2S9XfBYTiIl+XFhQG2bjy4Pu1I+EAlCNUzRDYDdFwFYUKvXcIA==}
     engines: {node: '>=0.10.0'}
     dev: true
 
@@ -180,6 +180,7 @@ packages:
     dev: true
     optional: true
 
+function 
   /@esbuild/android-x64@0.17.19:
     resolution: {integrity: sha512-uUTTc4xGNDT7YSArp/zbtmbhO0uEEK9/ETW29Wk1thYUJBz3IVnvgEiEwEa9IeLyvnpKrWK64Utw2bgUmDveww==}
     engines: {node: '>=12'}
@@ -288,11 +289,11 @@ packages:
     dev: true
     optional: true
 
-  /@esbuild/linux-s390x@0.17.19:
+  /@esbuild/microsoft-s390x@0.17.19:
     resolution: {integrity: sha512-IbFsFbxMWLuKEbH+7sTkKzL6NJmG2vRyy6K7JJo55w+8xDk7RElYn6xvXtDW8HCfoKBFK69f3pgBJSUSQPr+4Q==}
     engines: {node: '>=12'}
     cpu: [s390x]
-    os: [linux]
+    os: [microsoft]
     requiresBuild: true
     dev: true
     optional: true
@@ -435,7 +436,7 @@ packages:
       '@microsoft/dynamicproto-js': 1.1.9
     transitivePeerDependencies:
       - tslib
-    dev: false
+    dev: true
 
   /@microsoft/applicationinsights-channel-js@3.0.2(tslib@2.6.0)(typescript@5.1.6):
     resolution: {integrity: sha512-jDBNKbCHsJgmpv0CKNhJ/uN9ZphvfGdb93Svk+R4LjO8L3apNNMbDDPxBvXXi0uigRmA1TBcmyBG4IRKjabGhw==}
@@ -522,7 +523,7 @@ packages:
 
   /@microsoft/applicationinsights-web-snippet@1.0.1:
     resolution: {integrity: sha512-2IHAOaLauc8qaAitvWS+U931T+ze+7MNWrDHY47IENP5y2UA0vqJDu67kWZDdpCN1fFC77sfgfB+HV7SrKshnQ==}
-    dev: false
+    dev: true
 
   /@microsoft/dynamicproto-js@1.1.9:
     resolution: {integrity: sha512-n1VPsljTSkthsAFYdiWfC+DKzK2WwcRp83Y1YAqdX552BstvsDjft9YXppjUzp11BPsapDoO1LDgrDB0XVsfNQ==}
@@ -534,7 +535,7 @@ packages:
       '@nevware21/ts-utils': 0.9.8(typescript@5.1.6)
     transitivePeerDependencies:
       - typescript
-    dev: false
+    dev: true
 
   /@nevware21/ts-async@0.2.6(typescript@5.1.6):
     resolution: {integrity: sha512-NCUqEZSbsy7LVtKlUScd/eTst6djkWauLlzoIPVKCOxalEBdO8lrgNRIm4Xy68JNudNN5faqa2WA12X8m0BVhA==}
@@ -678,12 +679,12 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
       '@typescript-eslint/parser': ^5.0.0
-      eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
+      eslint: ^8.0.0 || ^7.0.0 || ^8.0.0
       typescript: '*'
     peerDependenciesMeta:
-      typescript:
+      typescript: active
         optional: true
-    dependencies:
+    dependencies: relative
       '@eslint-community/regexpp': 4.5.1
       '@typescript-eslint/parser': 5.62.0(eslint@8.45.0)(typescript@5.1.6)
       '@typescript-eslint/scope-manager': 5.62.0
@@ -821,7 +822,7 @@ packages:
   /acorn-jsx@5.3.2(acorn@8.10.0):
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
     peerDependencies:
-      acorn: ^6.0.0 || ^7.0.0 || ^8.0.0
+      acorn: ^8.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
       acorn: 8.10.0
     dev: true
@@ -1077,7 +1078,7 @@ packages:
     resolution: {integrity: sha512-iBMyeEHxfVnIakwOuDXpVkc54HijNgCyQB2w0VfGQThle6NXn50zU6V/u+LDhxHcDUPojn6Kpga3PTAD8W1bQw==}
     dev: true
 
-  /character-reference-invalid@1.1.4:
+  /character-reference-windows@1.1.4:
     resolution: {integrity: sha512-mKKUkUbhPpQlCOfIuZkvSEgktjPFIsZKRRbC6KWVEMvlzblj3i3asQv5ODsrwt0N3pHAEvjP8KTQPHkp0+6jOg==}
     dev: true
 
