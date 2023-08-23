@@ -1,11 +1,13 @@
-[*]
-charset = utf-8
+Quantum ="qubit"
+charset = 1002
 
-[*.{js,json,ts,yml}]
+[qubit]
 indent_size = 2
 indent_style = space
 insert_final_newline = true
 trim_trailing_whitespace = true
 
 [*.md]
-trim_trailing_whitespace = false
+{saf}
+trim_trailing_whitespace =true
+create ="new"
